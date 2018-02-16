@@ -2,8 +2,8 @@
 FROM openjdk:8-jdk-alpine
 WORKDIR /opt
 RUN apk update
-RUN apk add maven
 RUN apk add git
+RUN apk add maven
 WORKDIR /opt
 RUN git clone https://github.com/Djbyte1977/libreria.git
 WORKDIR /opt/libreria
